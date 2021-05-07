@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 3 Simple Statistical Evaluation | DATA 101 Shortest Textbook</title>
   <meta name="description" content="This is a example of a interactive book for DATA 101 Course thought by Prof. Tomasz Imielinski (http://data101.cs.rutgers.edu/) Find the demo site at (https://deeplokhande.github.io/data101demobook/) Published using Bookdown for R." />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 3 Simple Statistical Evaluation | DATA 101 Shortest Textbook" />
   <meta property="og:type" content="book" />
@@ -49,6 +49,8 @@
 
 
 
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 
@@ -57,6 +59,7 @@
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
 pre.sourceCode { margin: 0; }
 @media screen {
@@ -116,6 +119,7 @@ code span.va { color: #19177c; } /* Variable */
 code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
+
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -413,7 +417,21 @@ VOLUME_PER_MINUTE
 <tbody>
 <tr>
 <td style="text-align:left;">
-832
+1867
+</td>
+<td style="text-align:left;">
+Lincoln
+</td>
+<td style="text-align:left;">
+weekday
+</td>
+<td style="text-align:right;">
+40
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+918
 </td>
 <td style="text-align:left;">
 Holland
@@ -422,43 +440,57 @@ Holland
 weekday
 </td>
 <td style="text-align:right;">
-37
+68
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-1290
+1554
 </td>
 <td style="text-align:left;">
-Holland
+Lincoln
+</td>
+<td style="text-align:left;">
+weekday
+</td>
+<td style="text-align:right;">
+85
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+2331
+</td>
+<td style="text-align:left;">
+Lincoln
+</td>
+<td style="text-align:left;">
+weekday
+</td>
+<td style="text-align:right;">
+87
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+2716
+</td>
+<td style="text-align:left;">
+Lincoln
 </td>
 <td style="text-align:left;">
 weekend
 </td>
 <td style="text-align:right;">
-61
+67
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-166
+961
 </td>
 <td style="text-align:left;">
 Holland
-</td>
-<td style="text-align:left;">
-weekday
-</td>
-<td style="text-align:right;">
-50
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-1713
-</td>
-<td style="text-align:left;">
-Lincoln
 </td>
 <td style="text-align:left;">
 weekday
@@ -469,21 +501,7 @@ weekday
 </tr>
 <tr>
 <td style="text-align:left;">
-1058
-</td>
-<td style="text-align:left;">
-Holland
-</td>
-<td style="text-align:left;">
-weekend
-</td>
-<td style="text-align:right;">
-57
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-2278
+1589
 </td>
 <td style="text-align:left;">
 Lincoln
@@ -492,32 +510,18 @@ Lincoln
 weekday
 </td>
 <td style="text-align:right;">
-61
+73
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-234
+1060
 </td>
 <td style="text-align:left;">
 Holland
 </td>
 <td style="text-align:left;">
-weekday
-</td>
-<td style="text-align:right;">
-41
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-988
-</td>
-<td style="text-align:left;">
-Holland
-</td>
-<td style="text-align:left;">
-weekday
+weekend
 </td>
 <td style="text-align:right;">
 49
@@ -525,30 +529,30 @@ weekday
 </tr>
 <tr>
 <td style="text-align:left;">
-139
+2450
 </td>
 <td style="text-align:left;">
-Holland
+Lincoln
 </td>
 <td style="text-align:left;">
-weekday
+weekend
 </td>
 <td style="text-align:right;">
-58
+61
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-675
+2325
 </td>
 <td style="text-align:left;">
-Holland
+Lincoln
 </td>
 <td style="text-align:left;">
 weekday
 </td>
 <td style="text-align:right;">
-42
+63
 </td>
 </tr>
 </tbody>
@@ -612,22 +616,22 @@ ZODIAK
 <tbody>
 <tr>
 <td style="text-align:left;">
-10906
+10039
 </td>
 <td style="text-align:right;">
-34
+33
 </td>
 <td style="text-align:left;">
-Private
+?
 </td>
 <td style="text-align:left;">
-10th
+HS-grad
 </td>
 <td style="text-align:right;">
-6
+9
 </td>
 <td style="text-align:left;">
-Craft-repair
+?
 </td>
 <td style="text-align:right;">
 0
@@ -644,42 +648,10 @@ Capricorn
 </tr>
 <tr>
 <td style="text-align:left;">
-24608
+17540
 </td>
 <td style="text-align:right;">
-52
-</td>
-<td style="text-align:left;">
-Self-emp-inc
-</td>
-<td style="text-align:left;">
-Some-college
-</td>
-<td style="text-align:right;">
-10
-</td>
-<td style="text-align:left;">
-Sales
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:left;">
-United-States
-</td>
-<td style="text-align:left;">
-Taurus
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-11463
-</td>
-<td style="text-align:right;">
-34
+42
 </td>
 <td style="text-align:left;">
 Private
@@ -691,27 +663,27 @@ Bachelors
 13
 </td>
 <td style="text-align:left;">
-Prof-specialty
+Sales
 </td>
 <td style="text-align:right;">
 0
 </td>
 <td style="text-align:right;">
-0
+11317
 </td>
 <td style="text-align:left;">
-United-States
+?
 </td>
 <td style="text-align:left;">
-Taurus
+Aquarius
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-24993
+25538
 </td>
 <td style="text-align:right;">
-53
+54
 </td>
 <td style="text-align:left;">
 Private
@@ -735,30 +707,30 @@ Craft-repair
 United-States
 </td>
 <td style="text-align:left;">
-Sagittarius
+Virgo
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-19318
+23260
 </td>
 <td style="text-align:right;">
-44
+50
 </td>
 <td style="text-align:left;">
 Private
 </td>
 <td style="text-align:left;">
-Bachelors
+HS-grad
 </td>
 <td style="text-align:right;">
-13
+9
 </td>
 <td style="text-align:left;">
 Craft-repair
 </td>
 <td style="text-align:right;">
-0
+249419
 </td>
 <td style="text-align:right;">
 0
@@ -772,57 +744,25 @@ Leo
 </tr>
 <tr>
 <td style="text-align:left;">
-2714
+15769
 </td>
 <td style="text-align:right;">
-24
+39
 </td>
 <td style="text-align:left;">
-Private
+Federal-gov
 </td>
 <td style="text-align:left;">
-Some-college
+9th
 </td>
 <td style="text-align:right;">
-10
+5
 </td>
 <td style="text-align:left;">
-Exec-managerial
-</td>
-<td style="text-align:right;">
-0
+Machine-op-inspct
 </td>
 <td style="text-align:right;">
 0
-</td>
-<td style="text-align:left;">
-United-States
-</td>
-<td style="text-align:left;">
-Leo
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-8041
-</td>
-<td style="text-align:right;">
-30
-</td>
-<td style="text-align:left;">
-Private
-</td>
-<td style="text-align:left;">
-Some-college
-</td>
-<td style="text-align:right;">
-10
-</td>
-<td style="text-align:left;">
-Craft-repair
-</td>
-<td style="text-align:right;">
-249330
 </td>
 <td style="text-align:right;">
 0
@@ -836,54 +776,22 @@ Taurus
 </tr>
 <tr>
 <td style="text-align:left;">
-11112
+3276
 </td>
 <td style="text-align:right;">
-34
-</td>
-<td style="text-align:left;">
-State-gov
-</td>
-<td style="text-align:left;">
-Bachelors
-</td>
-<td style="text-align:right;">
-13
-</td>
-<td style="text-align:left;">
-Prof-specialty
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
-11276
-</td>
-<td style="text-align:left;">
-United-States
-</td>
-<td style="text-align:left;">
-Leo
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-2455
-</td>
-<td style="text-align:right;">
-24
+25
 </td>
 <td style="text-align:left;">
 Private
 </td>
 <td style="text-align:left;">
-Bachelors
+HS-grad
 </td>
 <td style="text-align:right;">
-13
+9
 </td>
 <td style="text-align:left;">
-Sales
+Adm-clerical
 </td>
 <td style="text-align:right;">
 0
@@ -900,25 +808,57 @@ Cancer
 </tr>
 <tr>
 <td style="text-align:left;">
-7293
+5210
 </td>
 <td style="text-align:right;">
-30
+27
 </td>
 <td style="text-align:left;">
 Private
 </td>
 <td style="text-align:left;">
-HS-grad
+Some-college
 </td>
 <td style="text-align:right;">
-9
+10
 </td>
 <td style="text-align:left;">
-Machine-op-inspct
+Tech-support
 </td>
 <td style="text-align:right;">
-5013
+3908
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:left;">
+United-States
+</td>
+<td style="text-align:left;">
+Libra
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+26743
+</td>
+<td style="text-align:right;">
+58
+</td>
+<td style="text-align:left;">
+Local-gov
+</td>
+<td style="text-align:left;">
+Bachelors
+</td>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:left;">
+Prof-specialty
+</td>
+<td style="text-align:right;">
+0
 </td>
 <td style="text-align:right;">
 0
@@ -928,6 +868,70 @@ United-States
 </td>
 <td style="text-align:left;">
 Aquarius
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+8595
+</td>
+<td style="text-align:right;">
+31
+</td>
+<td style="text-align:left;">
+Private
+</td>
+<td style="text-align:left;">
+Bachelors
+</td>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:left;">
+Sales
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:left;">
+United-States
+</td>
+<td style="text-align:left;">
+Libra
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+15437
+</td>
+<td style="text-align:right;">
+39
+</td>
+<td style="text-align:left;">
+Self-emp-inc
+</td>
+<td style="text-align:left;">
+HS-grad
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:left;">
+Exec-managerial
+</td>
+<td style="text-align:right;">
+3103
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:left;">
+United-States
+</td>
+<td style="text-align:left;">
+Leo
 </td>
 </tr>
 </tbody>
@@ -1092,16 +1096,16 @@ HAPPINESS
 <tbody>
 <tr>
 <td style="text-align:left;">
-3308
+2352
 </td>
 <td style="text-align:right;">
-72704
+11499
 </td>
 <td style="text-align:right;">
-37
+31
 </td>
 <td style="text-align:left;">
-Kazakhstan
+Sudan
 </td>
 <td style="text-align:left;">
 Female
@@ -1110,102 +1114,50 @@ Female
 0
 </td>
 <td style="text-align:right;">
-88201
+25642
 </td>
 <td style="text-align:right;">
-7.42
+2.32
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-4600
+3914
 </td>
 <td style="text-align:right;">
-76777
+18925
 </td>
 <td style="text-align:right;">
-56
+52
 </td>
 <td style="text-align:left;">
-Trinidad and Tobago
+Hungary
 </td>
 <td style="text-align:left;">
-Male
+Female
 </td>
 <td style="text-align:right;">
 1
 </td>
 <td style="text-align:right;">
-93598
+34133
 </td>
 <td style="text-align:right;">
-4.95
+4.98
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-1282
+6412
 </td>
 <td style="text-align:right;">
-31315
+24455
 </td>
 <td style="text-align:right;">
-53
+46
 </td>
 <td style="text-align:left;">
-Sweden
-</td>
-<td style="text-align:left;">
-Male
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-49034
-</td>
-<td style="text-align:right;">
-7.83
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-5122
-</td>
-<td style="text-align:right;">
-84009
-</td>
-<td style="text-align:right;">
-20
-</td>
-<td style="text-align:left;">
-Colombia
-</td>
-<td style="text-align:left;">
-Male
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
-100414
-</td>
-<td style="text-align:right;">
-8.26
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-2433
-</td>
-<td style="text-align:right;">
-42920
-</td>
-<td style="text-align:right;">
-33
-</td>
-<td style="text-align:left;">
-Iraq
+Venezuela
 </td>
 <td style="text-align:left;">
 Female
@@ -1214,50 +1166,24 @@ Female
 0
 </td>
 <td style="text-align:right;">
-57674
+41369
 </td>
 <td style="text-align:right;">
-4.36
+3.48
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-4308
+1433
 </td>
 <td style="text-align:right;">
-13675
+39092
 </td>
 <td style="text-align:right;">
-54
+55
 </td>
 <td style="text-align:left;">
-Zambia
-</td>
-<td style="text-align:left;">
-Male
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-28754
-</td>
-<td style="text-align:right;">
-3.28
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-4071
-</td>
-<td style="text-align:right;">
-51005
-</td>
-<td style="text-align:right;">
-43
-</td>
-<td style="text-align:left;">
-Thailand
+Bahrain
 </td>
 <td style="text-align:left;">
 Male
@@ -1266,50 +1192,24 @@ Male
 0
 </td>
 <td style="text-align:right;">
-67206
+54252
 </td>
 <td style="text-align:right;">
-5.47
+4.58
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-3927
+1189
 </td>
 <td style="text-align:right;">
-38442
+65840
 </td>
 <td style="text-align:right;">
-30
+64
 </td>
 <td style="text-align:left;">
-Morocco
-</td>
-<td style="text-align:left;">
-Male
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
-53284
-</td>
-<td style="text-align:right;">
-4.33
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-6382
-</td>
-<td style="text-align:right;">
-20492
-</td>
-<td style="text-align:right;">
-50
-</td>
-<td style="text-align:left;">
-Turkey
+Ukraine
 </td>
 <td style="text-align:left;">
 Female
@@ -1318,24 +1218,24 @@ Female
 0
 </td>
 <td style="text-align:right;">
-35729
+80647
 </td>
 <td style="text-align:right;">
-2.51
+6.68
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-287
+6209
 </td>
 <td style="text-align:right;">
-55146
+14197
 </td>
 <td style="text-align:right;">
-63
+31
 </td>
 <td style="text-align:left;">
-Suriname
+Switzerland
 </td>
 <td style="text-align:left;">
 Female
@@ -1344,10 +1244,114 @@ Female
 0
 </td>
 <td style="text-align:right;">
-71402
+31600
 </td>
 <td style="text-align:right;">
-5.67
+2.32
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+2259
+</td>
+<td style="text-align:right;">
+52860
+</td>
+<td style="text-align:right;">
+25
+</td>
+<td style="text-align:left;">
+Laos
+</td>
+<td style="text-align:left;">
+Male
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+67448
+</td>
+<td style="text-align:right;">
+5.29
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+1896
+</td>
+<td style="text-align:right;">
+97304
+</td>
+<td style="text-align:right;">
+45
+</td>
+<td style="text-align:left;">
+Ethiopia
+</td>
+<td style="text-align:left;">
+Male
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+111687
+</td>
+<td style="text-align:right;">
+9.52
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+1280
+</td>
+<td style="text-align:right;">
+21609
+</td>
+<td style="text-align:right;">
+68
+</td>
+<td style="text-align:left;">
+Panama
+</td>
+<td style="text-align:left;">
+Male
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+38629
+</td>
+<td style="text-align:right;">
+3.70
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+3222
+</td>
+<td style="text-align:right;">
+70334
+</td>
+<td style="text-align:right;">
+60
+</td>
+<td style="text-align:left;">
+Hong Kong
+</td>
+<td style="text-align:left;">
+Male
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+85698
+</td>
+<td style="text-align:right;">
+7.65
 </td>
 </tr>
 </tbody>
@@ -1422,6 +1426,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
