@@ -3,7 +3,9 @@ bookdown::gitbook:
   config:
     toc:
       before: |
-        <li><a href="./">DATA 101 Book Demo</a></li>
+        <li><a href="./">DATA 101 Book Demo</a>
+        <a href="https://dev7796.github.io/data101demobook" target="blank">Github Source</a>
+        </li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
     download: ["html"]
